@@ -1,0 +1,260 @@
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: url('img/city.jpg');
+    /* background: white; */
+    background-position: center;
+    background-size: cover; 
+}
+
+h3 {
+    color: #fff;
+    margin: 20px 0;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    background: rgba(0, 0, 0, .9);
+    padding: 16px;
+    border-radius: 16px;
+    margin-top: 16px;
+    box-shadow: 0 15px 25px rgba(0,0,0, .9);
+}
+
+/* Title / Header */
+span {
+    padding: 5px;
+    color: #03a9f4;
+}
+
+#title {
+    color: #fff;
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+/* User Info */
+.name-input,
+.age-input,
+.email-input {
+    margin: 16px 0;
+}
+
+.label-custom {
+    display: inline-block;
+    margin: auto;
+    margin-right: 32px;
+}
+
+.underline {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #03a9f4;
+    padding: 8px 8px 4px 8px;
+    font-size: 16px;
+    color: white;
+}
+
+#number-label {
+    width: 40.02px;
+    text-align: right;
+}
+
+#number {
+    width: 211px;
+}
+
+/* Dropdown Section */
+.dropdown-container {
+    margin: 40px 0;
+}
+
+.dev-status {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.dropdown {
+    width: 211px;
+}
+
+.dropdown:focus {
+    outline: none !important;
+    border-color: #03a9f4;
+    box-shadow: 0 0 8px #03a9f4;
+}
+
+/* Radio Section */
+div.radio-buttons {
+    margin-bottom: 20px;
+}
+
+.radio-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.radio-li {
+    margin: 8px;
+}
+
+.radio-label {
+    display: inline-block;
+    width: 131px;
+    margin: 0 16px;
+    text-align: left;
+    padding-left: 2px;
+}
+
+/* Checkbox Section */
+.checkbox-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.checkbox-li {
+    margin: 8px;
+}
+
+.check-label {
+    display: inline-block;
+    margin: 0 16px;
+    width: 131px;
+    text-align: left;
+}
+
+/* User Comments / Submit */
+textarea {
+    width: 371px;
+    height: 96px;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #03a9f4;
+    box-shadow: 0 0 8px #03a9f4;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #03a9f4;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.submit-btn:hover,
+.submit-btn:active {
+    background: #fff;
+    color: #03a9f4;
+    box-shadow: 0 1px 25px rgba(3, 169, 244, .6);
+}
+
+.submit-btn:focus {
+    outline: none;
+}
+/* Media Queries */
+
+/* Ipad Landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    
+    body {
+        margin: 0;
+        box-sizing: border-box;
+        background: inherit;
+    }
+
+    .form-container {
+        max-width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 30px 0;
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    .label-custom {
+        font-size: 20px;
+    }
+
+    .underline {
+        font-size: 20px;
+        width: 220px;
+    }
+
+    #number {
+        width: 220px;
+    }
+
+    #description {
+        font-size: 30px;
+    }
+
+    strong {
+        font-size: 22px;
+    }
+
+    .dropdown {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+}
+
+/* Ipad Portrait */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+
+    .form-container {
+        height: 100%;
+        padding-bottom: 40px;
+    }
+}
+
+/* Ipad Pro Portrait */
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    
+    .form-container {
+        height: 100vh;
+        padding-bottom: 40px;
+    }      
+  }
