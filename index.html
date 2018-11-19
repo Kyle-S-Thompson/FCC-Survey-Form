@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <main>
+        <div class="form-container">
+            <h1 id="title"><span>&lt;</span>Coder Survey<span>&gt;</span></h1>
+            <p id="description">A survey for those passionate about programming</p>
+
+           <form action="" id="survey-form">
+               <!-- USER INFO -->
+               <div class="name-input">
+                    <label for="name" id="name-label" class="label-custom"><i>Name</i></label>
+                    <input name="name" type="text" id="name" class="underline" placeholder="Enter Your Name" required>
+               </div>
+
+               <div class="email-input">
+                   <label for="email" id="email-label" class="label-custom"><i>Email</i></label>
+                    <input type="email" name="email" id="email" class="underline" placeholder="Enter Your Email" required>
+               </div>
+
+               <div class="age-input">
+                   <label for="age" id="number-label" class="label-custom"><i>Age</i></label>
+                   <input type="number" name="age" id="number" class="underline" placeholder="Select Your Age" min="1" max="100">
+               </div>
+
+               <!-- DROPDOWN SECTION -->
+               <div class="dropdown-container">
+                   <label for="dropdown-item" class="dev-status"><strong>Dev Status</strong></label>
+                   <select name="dropdown-item" id="dropdown" class="dropdown">
+                       <option value="Student">Student</option>
+                       <option value="Learning">Self Teaching</option>
+                       <option value="Developer">Developer</option>
+                       <option value="Other">Other</option>
+                   </select>
+                </div>
+
+                <!-- RADIO SECTION -->
+                <h3>How Long Have You Been Learning?</h3>
+                <div class="radio-buttons">
+                <ul class="radio-ul">  
+                    <li class="radio-li">
+                        <input type="radio" name="radio-btn" value="1" class="radio"><label class="radio-label">I Just Started</label>
+                    </li>
+                    <li class="radio-li">
+                        <input type="radio" name="radio-btn" value="2" class="radio"><label class="radio-label">A Couple of Years</label>
+                    </li>
+                    <li class="radio-li">
+                        <input type="radio" name="radio-btn" value="3" class="radio"><label class="radio-label">For Several Years</label>
+                    </li>
+                </ul>
+                </div>
+
+                <!-- CHECKBOX SECTION -->
+                <h3 class="checkboxes__title">What Motivates You To Keep Learning?</h3>
+                <div class="checkboxes">
+                <ul class="checkbox-ul">
+                    <li class="checkbox-li">
+                        <input type="checkbox" name="check" value="1"><label for="check" class="check-label">The Challenge</label>
+                    </li>
+                    <li class="checkbox-li">
+                        <input type="checkbox" name="check" value="2"><label for="check" class="check-label">A Better Career</label>
+                    </li>
+                    <li class="checkbox-li">
+                        <input type="checkbox" name="check" value="3"><label for="check" class="check-label">Constant Learning</label>
+                    </li>
+                    <li class="checkbox-li">
+                        <input type="checkbox" name="check" value="4"><label for="check" class="check-label">Financial Stability</label>
+                    </li>
+                </ul>    
+                </div>
+
+                <!-- USER INPUT  -->
+                <h3 class="comment__title">Anything You Would Like To Add?</h3>
+                <div class="comments">
+                    <textarea name="comment" id="comment-box" class="comment-text" placeholder="Write your thoughts here..." cols="30" rows="10"></textarea>
+                </div>
+                   
+                <button type="submit" id="submit" class="submit-btn">Submit</button>
+           </form>
+        </div>
+    </main>
+</body>
+</html>
